@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 62.5%; /* Causes base font size to be ~10px */
+  font-family: Poppins, monospace;
 }
+
+.text-blurb {
+  width: 355px;
+  text-align: center;
+}
+
+.try-it {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(248, 32%, 49%) ;
+  justify-items: center;
+  border-radius: 10px;
+  font-size: 150%;
+}
+
+.sign-up {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: white;
+  border-radius: 10px;
+  
+}
+
+.sign-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.claim-trial {
+  width: 335px;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 10px;
+ }
+
+.terms {
+  color: hsl(246, 25%, 77%)
+ }
+
+input {
+  width: 335px;
+  border-radius: 10px;
+ }
