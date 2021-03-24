@@ -1,59 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 body {
   background-color: black;
   color: white;
+  font-size: 62.5%; /* Causes base font size to be ~10px */
+  font-family: Poppins, sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  max-width: 355px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.try-it {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 62.5%; /* Causes base font size to be ~10px */
-  font-family: Poppins, monospace;
-}
-
-.text-blurb {
-  width: 355px;
-  text-align: center;
-}
-
-.try-it {
-  width: 355px;
-  display: flex;
-  flex-direction: column;
   background-color: hsl(248, 32%, 49%) ;
-  justify-items: center;
   border-radius: 10px;
   font-size: 150%;
 }
 
-.sign-up {
-  width: 355px;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  background-color: white;
-  border-radius: 10px;
-  
+.try-it p {
+  max-width: 60%;
 }
 
-.sign-boxes {
+.sign-up {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0px 10px 0px;
+  background-color: white;
+  border-radius: 5px;
+  
 }
 
+.sign-up input{
+  min-width: 80%;
+  border-radius: 5px;
+}
+
+
 .claim-trial {
-  width: 335px;
+  min-width: 82%;
   background-color: hsl(154, 59%, 51%);
-  border-radius: 10px;
+  border-radius: 5px;
  }
+
+
 
 .terms {
   color: hsl(246, 25%, 77%)
- }
-
-input {
-  width: 335px;
-  border-radius: 10px;
  }
