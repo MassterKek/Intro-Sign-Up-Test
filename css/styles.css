@@ -1,58 +1,72 @@
-body {
-  background-color: black;
-  color: white;
-  font-size: 62.5%; /* Causes base font size to be ~10px */
-  font-family: Poppins, sans-serif;
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: Poppins, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .container {
-  max-width: 355px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  padding: 24px; 
 }
 
+.text-box {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 .try-it {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: hsl(248, 32%, 49%) ;
   border-radius: 10px;
-  font-size: 150%;
+  padding: 25px 75px;
 }
 
-.try-it p {
-  max-width: 60%;
-}
 
 .sign-up {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: white;
   border-radius: 5px;
-  
+  padding: 24px;
+  margin-top: 24px;
 }
 
 .sign-up input{
-  min-width: 80%;
   border-radius: 5px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 18px;
 }
 
 
 .claim-trial {
-  min-width: 82%;
   background-color: hsl(154, 59%, 51%);
   border-radius: 5px;
+  padding: 24px;
+  margin-top: 12px;
+  text-align: center;
  }
 
 
 
 .terms {
-  color: hsl(246, 25%, 77%)
+  color: hsl(246, 25%, 77%);
+  margin-top: 24px;
  }
