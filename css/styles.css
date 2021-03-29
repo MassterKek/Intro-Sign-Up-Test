@@ -37,7 +37,7 @@ h1 {
   text-align: center;
   background-color: hsl(248, 32%, 49%) ;
   border-radius: 10px;
-  padding: 25px 75px;
+  padding: 24px 75px;
   box-shadow: 0 8px 0  rgba(0, 0, 0, 0.1);
 }
 
@@ -87,4 +87,36 @@ h1 {
 .terms strong {
   font-weight: 700;
   color: hsl(0, 100%, 74%);
+}
+
+/* For Desktop */
+@media only screen and (min-width: 1000px) {
+
+  body{
+    background-image: url("../bg-intro-desktop.png");
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 120px 164px;
+  }
+
+  .text-box {
+    text-align: left;
+    padding-right: 36px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .sign-box {
+    padding-left: 36px;
+  }
+
+  .claim-trial {
+    padding: 12px;
+  }
 }
