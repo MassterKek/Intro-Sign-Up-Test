@@ -7,11 +7,19 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  position: absolute;
+  z-index: 2;
+}
+
 body {
+  position:relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: black;
+  background-image: url("../bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
   color: white;
   font-family: Poppins, sans-serif;
   line-height: 1.5;
@@ -19,8 +27,9 @@ body {
 
 h1 {
   font-size: 2em;
-  font-weight: 700;
-  line-height: 1;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 24px;
 }
 
 .container {
@@ -29,14 +38,20 @@ h1 {
 
 .text-box {
   text-align: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .try-it {
+  text-align: center;
   background-color: hsl(248, 32%, 49%) ;
   border-radius: 10px;
   padding: 25px 75px;
+  box-shadow: 0 8px 0  rgba(0, 0, 0, 0.1);
+}
+
+.try-it span {
+  font-weight: 600;
 }
 
 
@@ -45,11 +60,15 @@ h1 {
   border-radius: 5px;
   padding: 24px;
   margin-top: 24px;
+  box-shadow: 0 8px 0  rgba(0, 0, 0, 0.1);
 }
 
 .sign-up input{
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
   border-radius: 5px;
   width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2); 
   margin-top: 12px;
   margin-bottom: 12px;
   padding: 18px;
@@ -57,16 +76,24 @@ h1 {
 
 
 .claim-trial {
-  background-color: hsl(154, 59%, 51%);
+  font-weight: 500;
+  background-color:hsl(154, 59%, 51%); 
   border-radius: 5px;
   padding: 24px;
   margin-top: 12px;
   text-align: center;
- }
+  box-shadow: 0 4px 0  rgb(49, 186, 126);
 
-
+}
 
 .terms {
+  text-align: center;
+  font-size: 70%;
   color: hsl(246, 25%, 77%);
-  margin-top: 24px;
- }
+  margin: 12px 12px 0px 12px;
+}
+
+.terms span {
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
