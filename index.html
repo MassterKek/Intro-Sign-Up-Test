@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Your Website Name</title>
+    <title>Learn 2 Code</title>
+    <link rel="shortcut icon" type="image/png" href="img/../favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -29,14 +30,17 @@
 
         <div class="sign-up">
 
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="password" placeholder="Password" />
-            
-          <div class="claim-trial"> 
-            <p>Claim your free trial</p>
-          </div>
+          <form>
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Password" required />
+
+            <button type="submit" class="claim-trial"> 
+              Claim your free trial
+            </button>
+
+          </form>
 
           <div class="terms">
             <p> By clicking the button, you are agreeing to our <strong>Terms and Services</strong> </p>
